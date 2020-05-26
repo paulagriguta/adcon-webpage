@@ -1,0 +1,17 @@
+<h2 class="text-center">Dashboard</h2>
+<div class="row">
+    <div class="offset-sm-2 col-sm-8">
+        <div class="jumbotron text-center">Welcome to your dashboard page, {{user.profile.firstName}} </div>
+
+        <div class="list-group">
+            {{#each projects }}
+            <a href="dashboard/{{ this._id }}" class="list-group-item">
+                {{ this.username}}
+            </a>
+            {{/each}}
+        </div>
+        <a class="nav-link" href="/users/logout">
+            <span class="d-inline-block px-4 py-2 border">Ieși din cont</span>
+        </a>
+    </div>
+</div>
