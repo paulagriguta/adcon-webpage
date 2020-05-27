@@ -35,7 +35,7 @@ io.on('connection', (socket) => {
     });
     socket.on('disconnect', function () {
         console.log('A user disconnected');
-     });
+    });
 });
 http.listen(3200, function () {
     console.log('listening on *: 3200');
