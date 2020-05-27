@@ -38,5 +38,6 @@ io.on('connection', (socket) => {
     });
 });
 http.listen(3200, function () {
-    console.log('listening on *: 3200');
+    console.log('listening on *: 3200 ...');
 });
+///all good here
